@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- 为什么要看我的石山代码 -->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes start01 {
+            0%{transform: translateX(-2000px);}
+            33%{transform: translateX(15px);}
+            40%{transform: translateX(0px);}
+            100%{transform: translateX(0px);}
+        }
+        @keyframes start02 {
+            0%{transform: translateX(-2000px);}
+            10%{transform: translateX(-2000px);}
+            43%{transform: translateX(15px);}
+            50%{transform: translateX(0px);}
+            100%{transform: translateX(0px);}
+        }
+        @keyframes start03 {
+            0%{transform: translateX(-2000px);}
+            20%{transform: translateX(-2000px);}
+            53%{transform: translateX(15px);}
+            60%{transform: translateX(0px);}
+            100%{transform: translateX(0px);}
+        }
+        @keyframes start04 {
+            0%{transform: translateX(-2000px);}
+            30%{transform: translateX(-2000px);}
+            63%{transform: translateX(15px);}
+            70%{transform: translateX(0px);}
+            100%{transform: translateX(0px);}
+        }
+        @keyframes start05 {
+            0%{transform: translateX(-2000px);}
+            40%{transform: translateX(-2000px);}
+            73%{transform: translateX(15px);}
+            80%{transform: translateX(0px);}
+            100%{transform: translateX(0px);}
+        }
+        @keyframes start06 {
+            0%{transform: translateX(-2000px);}
+            50%{transform: translateX(-2000px);}
+            83%{transform: translateX(15px);}
+            90%{transform: translateX(0px);}
+            100%{transform: translateX(0px);}
+        }
+        @keyframes start07 {
+            0%{}
+            45%{
+                background-color: #f0f4f8;
+            }
+            85% {box-shadow: inset 0px 0px 0px;}
+            100%{
+                background-color: rgb(255, 255, 255);
+                box-shadow: inset 0px 0px 10px rgb(41, 41, 41);
+            }
+        }
+
+
+
+        /* *:hover{display:none} */
+        #background01 {
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 80%;
+            min-height: 300px;
+        }
+        .duan01 {
+            text-align: center;
+            font-size: 24px;
+            margin: 0;
+            padding: 10px;
+        }
+        .duan02 {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .duan03 {
+            text-align: left;
+            padding: 20px;
+            font-size: 20px;
+            margin-top: 40px;
+            border-left: #195cec 2px solid;
+            /* box-shadow:  0px 0px 5px rgb(41, 41, 41); */
+            background-color: rgb(240, 252, 255);
+            box-shadow: 0px 0px 10px rgb(153, 153, 153);
+            margin-left: 20px;
+            transition: all 0.1s;
+            border-radius: 10px;
+        }
+        .duan03:hover {
+            box-shadow: 0px 0px 20px rgb(153, 153, 153);
+            transform: translateX(3px);
+            
+        }
+        .history01 {
+            width: 100%;
+            min-height: 300px;
+            border-left: black 3px solid;
+        }
+        .kuaileft {
+            width:49%;
+            min-height: 300px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgb(41, 41, 41) 0px 0px 10px;
+            border-radius: 30px;
+            transition: all 0.07s;
+        }
+        .kuaileft:hover{transform: translateY(-3px);box-shadow: rgb(41, 41, 41) 0px 0px 15px;}
+        .kuairight {
+            width:49%;
+            min-height: 300px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgb(41, 41, 41) 0px 0px 10px;
+            border-radius: 30px;
+            transition: all 0.07s;
+        }
+        .kuairight:hover{transform: translateY(-3px);box-shadow: rgb(41, 41, 41) 0px 0px 15px;}
+        .zhong01 {
+            color: #195cec;
+            font-weight: bolder;
+            font-size: 25px;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body style="background-color: #f0f4f8;">
+    <div id="background01">
+        <div style="margin: 20px auto; font-size:10vw; justify-content: center;display: flex;font-weight: bold;animation: start07 2s forwards;border-radius: 50px;">
+            <div style="animation: start01 1.7s;">B</div>
+            <div style="animation: start02 1.7s;">A</div>
+            <div style="animation: start03 1.7s;">3</div>
+            <div style="animation: start04 1.7s;">N</div>
+            <div style="animation: start05 1.7s;">D</div>
+            <div style="animation: start06 1.7s;">N</div>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+            <div class="kuaileft">
+                <h1 style="text-align: center; margin: 0; padding: 20px;font-size: 40px;" class="zhong01">QSL卡片</h1>
+                <p class="duan01">邮寄地址：河北省保定市涞源县小北关村同富街74号</p>
+                <p class="duan01">电话：13932249736</p>
+                <p class="duan01">邮编：074300</p>
+                <p class="zhong01">目前仅使用实体QSL卡片，电子形式无法接收也无法寄送~</p>
+                <p class="zhong01">由于学校两周一放假，所以如果你给我寄卡片，可能需要等待两周甚至更长时间才能等到回卡</p>
+            </div>
+            <div class="kuairight">
+                <h1 style="text-align: center; margin: 0; padding: 20px;font-size: 40px;" class="zhong01">我的设备</h1>
+                <p class="duan01 duan02">电台：泉盛UVK6</p>
+                <p class="duan01 duan02">天线：八木天线</p>
+                <p class="duan01 duan02">功率：5W</p>
+                <p class="duan01 duan02">常用频率：438.500MHz</p>
+                <p class="duan01 duan02">常用中继台：无</p>
+            </div>
+        </div>
+        <div style="width: 100%; margin: 20px auto; min-height: 20px;padding: 20px;" class="kuaileft">
+            <h1 style="text-align: center; margin: 0; padding: 20px;font-size: 40px;" class="zhong01">其它信息</h1>
+            <p class="duan01">ITU:44……CQ:24……GRID:OM79II</p>
+            <p class="duan01">QQ:3562668219</p>
+        </div>
+        <h1 style="font-size:50px; color:#195cec">历史</h1>
+        <div class="history01">
+            <p class="duan03"><b style="font-size:30px;color:#195cec">2024年12月</b><br>  第一次了解到业余无线电，觉得很有意思，决定研究研究</p>
+            <p class="duan03"><b style="font-size:30px;color:#195cec">2025年1月</b><br>  我买了一台泉盛UVK6，打算考取操作证，入坑业余无线电</p>
+            <p class="duan03"><s><b style="font-size:30px;color:#195cec">2025年1月-2026年5月</b><br>  电台被放起来吃灰</s></p>
+            <p class="duan03"><b style="font-size:30px;color:#195cec">2026年6月</b><br>  我考到操作证了。我又能玩了</p>
+            <p class="duan03"><b style="font-size:30px;color:#195cec">2026年6-8月</b><br>  因为所居住的地方四面环山，方圆50km山区，整整两个月用尽所有方法也无任何一次通联</p>
+            <p class="duan03"><b style="font-size:30px;color:#195cec">2026年9月 </b><br>  我来衡水上学了。我又能玩了</p>
+        </div>
+        <h1 style="font-size:50px; color:#195cec">图片</h1>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
+            <img src="QSL.jpg" style="width: 47%;border-radius: 20px;box-shadow: rgb(41, 41, 41) 0px 0px 10px;">
+            <img src="QSL2.jpg" style="width: 47%;border-radius: 20px;box-shadow: rgb(41, 41, 41) 0px 0px 10px;">
+        </div>
+    </div>
+    <div style="width: 100%;min-height: 200px;background-color:#80a1eb;margin:0px;margin-top:100px">
+        <p style="text-align: center; margin: 0; padding: 20px;">©2026 BA3NDN</p>
+    </div>
+</body>
+</html>
